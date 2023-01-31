@@ -10,7 +10,15 @@ class ResizablePanel extends StatefulWidget {
   Function(double) on_update_size;
   CrossAxisAlignment cross_axis_alignment;
 
-  ResizablePanel({required this.left, required this.right, required this.initial_panel_size, required this.on_update_size, this.handle_size = 4, this.left_min_width = 0, this.right_min_width = 0, this.cross_axis_alignment = CrossAxisAlignment.start});
+  ResizablePanel(
+      {required this.left,
+      required this.right,
+      required this.initial_panel_size,
+      required this.on_update_size,
+      this.handle_size = 4,
+      this.left_min_width = 0,
+      this.right_min_width = 0,
+      this.cross_axis_alignment = CrossAxisAlignment.start});
 
   @override
   _ResizablePanelState createState() {
